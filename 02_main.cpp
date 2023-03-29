@@ -4,7 +4,7 @@
 
 int main()
 {
-    cv::Mat src  = cv::imread("../data/lean.jpg", 0);
+    cv::Mat src  = cv::imread("../data/lena.jpg", 2);
     if (src.empty())
     {
         std::cout << "Could not load iamge ..." << std::endl;

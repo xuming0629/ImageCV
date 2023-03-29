@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(ImageCV VERSION 0.1.0)
 
-set(OpenCV_DIR "/usr/local")
+set(OpenCV_DIR "~/.local")
 message(STATUS ${OpenCV_DIR})
 find_package(OpenCV REQUIRED)
 if(OpenCV_FOUND)
