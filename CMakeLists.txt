@@ -17,7 +17,8 @@ endif()
 
 #add_executable(ImageCV main.cpp)
 #add_executable(ImageCV 02_main.cpp)
-add_executable(ImageCV 03_main.cpp)
+#add_executable(ImageCV 03_main.cpp)
+add_executable(ImageCV 04_main.cpp)
 
 target_link_libraries(ImageCV ${OpenCV_LIBS})
 
