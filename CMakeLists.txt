@@ -5,7 +5,7 @@ set(OpenCV_DIR "~/.local")
 message(STATUS ${OpenCV_DIR})
 find_package(OpenCV REQUIRED)
 if(OpenCV_FOUND)
-    include_directories(${OpenCV_DIR}/include4/opencv2)
+    include_directories(${OpenCV_DIR}/include/opencv4/)
     include_directories( ${OpenCV_INCLUDE_DIRS})
     link_directories(${OpenCV_DIR}/lib)
     message(STATUS "Configure package with OpenCV!")
@@ -16,6 +16,8 @@ else()
 endif()
 
 #add_executable(ImageCV main.cpp)
-add_executable(ImageCV 02_main.cpp)
+#add_executable(ImageCV 02_main.cpp)
+add_executable(ImageCV 03_main.cpp)
+
 target_link_libraries(ImageCV ${OpenCV_LIBS})
 
